@@ -1,0 +1,11 @@
+<head>
+  <title>double-subscribe-repro</title>
+</head>
+
+<body>
+  {{#if currentUser}}
+    Logged in as {{currentUser}}. <button class="logout">Logout</button>
+  {{else}}
+    <input type="text"><button class="login">Login</button>
+  {{/if}}
+</body>
