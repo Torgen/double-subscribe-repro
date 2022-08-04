@@ -1,10 +1,9 @@
 import { Meteor } from 'meteor/meteor';
 
-for (let i = 0; i < 20; i++) {
-  Meteor.publish(null, function() {
-    return Meteor.users.find();
-  });
-}
+Meteor.publish(null, function() {
+  Meteor._sleepForMs(100);
+  return [];
+});
 
 Meteor.publish(null, function() {
   if (!this.userId) {
